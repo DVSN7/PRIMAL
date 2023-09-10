@@ -1,0 +1,41 @@
+/* Add or modify CSS rules as needed for styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #dcdcdc; /* Initial background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the container fill the viewport */
+}
+
+.clickable {
+    /* Maintain aspect ratio */
+    width: auto;
+    height: 95vh; /* Resize the image to 95% of the viewport height */
+    max-width: 100%; /* Maintain aspect ratio within the viewport width */
+    cursor: pointer; /* Add a pointer cursor to indicate clickability */
+}
+
+.background-button {
+    width: 100%; /* Extend the button to full width of the container */
+    padding: 10px 0; /* Button padding with no horizontal padding */
+    margin-top: 0; /* Move the button to the top of the page */
+    cursor: pointer; /* Add a pointer cursor */
+    background-color: transparent; /* Make the button transparent */
+    color: transparent; /* Text color is transparent */
+    font-size: 0; /* Set font size to 0 to remove text */
+    border: none; /* Remove button border */
+    outline: none; /* Remove button outline */
+    transition: background-color 0.3s ease; /* Smooth color transitions for background */
+}
+
+.background-button:hover {
+    background-color: transparent; /* Hover background remains transparent */
+}
