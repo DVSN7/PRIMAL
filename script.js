@@ -2,15 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const randomImage = document.getElementById("randomImage");
     const backgroundButton = document.getElementById("backgroundButton");
 
-    const imageCount = 5; // Set this to the number of images in your database
+    const imageCount = 194; // Set this to the number of images in your database
     const imagePath = "images/"; // Relative path to the "images" folder
     const imageExtension = ".jpg"; // Set the image file extension
 
     // Function to generate a random image URL
-    function getRandomImageURL() {
-        const randomIndex = Math.floor(Math.random() * imageCount) + 1;
-        return `${imagePath}image${randomIndex}${imageExtension}`;
-    }
+function getRandomImageURL() {
+    const randomIndex = Math.floor(Math.random() * imageCount) + 1;
+    const paddedIndex = String(randomIndex).padStart(3, '0'); // Ensure three-digit format
+    return `${imagePath}image${paddedIndex}${imageExtension}`;
+}
 
     // Function to load a new random image
     function loadRandomImage() {
