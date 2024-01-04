@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const randomImage = document.getElementById("randomImage");
     const backgroundButton = document.getElementById("backgroundButton");
     const imageCount = 130; 
-    const imagePath = "/images/"; 
+    const imagePath = "images/"; 
     const imageExtension = ".jpg"; 
 
 function getRandomImageURL() {
