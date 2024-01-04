@@ -39,4 +39,10 @@ function getRandomImageURL() {
             backgroundToggle = true;
         }
     });
+
+randomImage.onerror = function() {
+    console.error("Image failed to load:", this.src);
+};
+
+    
 });
