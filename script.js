@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const randomImage = document.getElementById("randomImage");
     const backgroundButton = document.getElementById("backgroundButton");
 
-    const imageCount = 194; // Set this to the number of images in your database
+    const imageCount = 130; // Set this to the number of images in your database
     const imagePath = "images/"; // Relative path to the "images" folder
     const imageExtension = ".jpg"; // Set the image file extension
 
